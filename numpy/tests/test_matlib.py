@@ -50,6 +50,11 @@ def test_repmat():
                   [0, 1, 2, 3, 0, 1, 2, 3]])
     assert_array_equal(x, y)
 
+def test_isinstance_int64():
+    assert_(isinstance(numpy.int64(1), int))
+
+def test_isinstance_float():
+    assert_(isinstance(numpy.float(1), float))
 
 if __name__ == "__main__":
     run_module_suite()
